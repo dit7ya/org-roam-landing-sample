@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="An Effortless PKM System.">
-    <meta name="author" content="Sayan Sarkar">
+    <meta name="author" content="Org Roam Contributors">
 
     <title>Org Roam</title>
     <link rel="stylesheet" href="https://unpkg.com/wingcss" />
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 </head>
 
 
@@ -22,44 +23,87 @@
         <div class="nav-item"><a href="#community">Community</a></div>
     </div>
 
+
     <section class="hero container center text-center">
         <div>
             <img src="./img/logo.png" alt="Org Roam Logo" height="200">
             <h3>Org Roam</h3>
-            <h5>An Effortless Personal Knowledge Management System</h5>
+            <!-- <div id="target"></div> -->
+            <h5 id="target"></h5>
+
+            <script type="module">
+             import {
+                 type,
+                 type as loop
+             } from "https://unpkg.com/@camwiegert/typical@0.1.1/typical.js";
+
+             const target = document.querySelector("#target");
+
+             type(target, "An Effortless Personal Knowledge Management System", 1000, "Notetaking on steroids", 1000, loop);
+            </script>
+
+
+            <!-- <h5>An Effortless Personal Knowledge Management System</h5> -->
+
         </div>
     </section>
+
+    <section class="container center">
+        <div>
+            <img src="./img/screenshot.png" alt="Org Roam Screenshot">
+        </div>
+    </section>
+
 
     <section id="features" class="container center">
         <div>
             <h3 class="header">FEATURES</h3>
             <div class="row">
                 <div class="col">
-                    <h5 class="left">Private and Portable</h5>
+                    <h5 class="left">
+                        <iconify-icon data-icon="fxemoji:lock"></iconify-icon> &nbsp; Private and Portable
+                    </h5>
                     <p class="content">All notes are stored in your local machine without any analytics whatsoever. <em>Your</em> data is yours, period. Notes are written in the plaintext org markup, and are always portable.</p>
                 </div>
                 <div class="col">
-                    <h5 class="left">Backlinks</h5>
+                    <h5 class="left">
+                        <iconify-icon data-icon="flat-color-icons:link"></iconify-icon> &nbsp; Backlinks
+                    </h5>
                     <p class="content">Backlinks are the core of Org Roam. For any note topic, you can see all the other notes that link to it.</p>
                 </div>
+            </div>
+
+            <div class="row">
+
                 <div class="col">
-                    <h5 class="left">Effortless</h5>
+                    <h5 class="left">
+                        <iconify-icon data-icon="emojione-v1:lightning-mood"></iconify-icon> &nbsp; Effortless
+                    </h5>
                     <p class="content">As all your notes are automatically centralized, you don't have to break flow to decide <em>where</em> a note should go.</p>
+                </div>
+
+                <div class="col">
+                    <h5 class="left">
+                        <iconify-icon data-icon="bx:bxs-network-chart"></iconify-icon> &nbsp; Graph Visualization
+                    </h5>
+                    <p class="content">Discover surprising and previously unseen connections in your notes with the built-in Graph Network Visualization.</p>
                 </div>
             </div>
 
 
             <div class="row">
                 <div class="col">
-                    <h5 class="left">Graph Visualization</h5>
-                    <p class="content">Discover surprising and previously unseen connections in your notes with the build-in Graph Network Visualization.</p>
-                </div>
-                <div class="col">
-                    <h5 class="left">Extensibility</h5>
+                    <!-- <h5 class="left"><iconify-icon data-icon="ic:round-extension"></iconify-icon> &nbsp; Extensibility</h5> -->
+                    <h5 class="left">
+                        <iconify-icon data-icon="twemoji:puzzle-piece"></iconify-icon> &nbsp; Extensible
+                    </h5>
                     <p class="content">Org Roam is built on top of Emacs and Org Mode, making their vast ecosystems easily integrable.</p>
                 </div>
                 <div class="col">
-                    <h5 class="left">Free and Open Source</h5>
+                    <!-- <h5 class="left"><iconify-icon data-icon="mdi:source-branch"></iconify-icon> &nbsp; Free and Open Source</h5> -->
+                    <h5 class="left">
+                        <iconify-icon data-icon="logos:git-icon"></iconify-icon> &nbsp; Free and Open Source
+                    </h5>
                     <p class="content">Org Roam is licensed under GNU General Public License version 3 or later. Contribute to our codebase <a href="https://github.com/org-roam/org-roam">here</a>.</p>
                 </div>
             </div>

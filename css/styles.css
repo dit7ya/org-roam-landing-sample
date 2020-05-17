@@ -119,3 +119,8 @@ footer {
   margin-right: 10px;
   border-radius: 3px;
 }
+
+
+img {
+    max-width: 100%;
+}
